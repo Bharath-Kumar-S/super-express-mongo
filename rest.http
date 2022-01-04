@@ -1,0 +1,31 @@
+GET http://localhost:3000
+Content-Type: application/json
+
+###
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/61d4adf5688b7ff60566f39b
+
+###
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name":"Ramya",
+    "age": 25,
+    "gender": "Female"
+}
+
+###
+
+PATCH  http://localhost:3000/user/61d4c59ee1f58e295b6b9590
+Content-Type: application/json
+
+{
+    "name":"Kutty Pappa"
+}
+
+###
+DELETE http://localhost:3000/user/61d4b1105d2ab8fcfba4c91c
